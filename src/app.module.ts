@@ -3,6 +3,8 @@ import { ProductModule } from './product/product.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { StockModule } from './stock/stock.module';
+import { PersonModule } from './person/person.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -31,6 +33,7 @@ import { StockModule } from './stock/stock.module';
     }),
     ProductModule,
     StockModule,
+    PersonModule,
   ],
   controllers: [],
   providers: [],
